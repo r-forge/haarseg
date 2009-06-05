@@ -1,0 +1,11 @@
+Package: HaarSeg
+Version: 0.0.2
+Date: 2009-01-08
+Title: HaarSeg
+Author: Erez Ben-Yaacov <erez.ben.yaacov@gmail.com> and Yonina C. Eldar <yonina@ee.technion.ac.il> (R package wrapper by Henrik Bengtsson <henrikb@braju.com>)
+Maintainer: Erez Ben-Yaacov <erez.ben.yaacov@gmail.com>
+Description: This package provides the HaarSeg method.
+URL: http://www.ee.technion.ac.il/Sites/People/YoninaEldar/Info/software/HaarSeg.htm
+License: LGPL (== 2.1)
+Depends: R (>= 2.6.0)
+LazyLoad: yes
