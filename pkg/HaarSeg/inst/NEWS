@@ -1,6 +1,17 @@
 Package: HaarSeg
 ================
 
+Version: 0.0.3 [2011-11-19]
+o BUG FIX: Package no longer gives a warning (error in R devel) when
+  loaded reporting on "Error : .onLoad failed in loadNamespace() for
+  'HaarSeg', details: call: library.dynam(pkgname, package = pkgname)
+  error: argument "lib.loc" is missing, with no default".
+o BUG FIX: When unloading the package, an exception ".onUnload failed
+  in unloadNamespace() for 'HaarSeg', details: call: library.dynam.unload(
+  libpath = libpath) error: no shared object was specified" would be
+  thrown.
+
+
 Version: 0.0.2 [2009-01-08]
 o CLEAN UP: Pruned up the code, e.g. replaced TABs with spaces etc.
 

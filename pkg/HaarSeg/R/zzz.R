@@ -1,20 +1,12 @@
 # .onLoad()/.onUnload() is used when there is a NAMESPACE file
 .onLoad <- function(libname, pkgname) {
-  library.dynam(pkgname, package=pkgname)
+  library.dynam(pkgname, package=pkgname, lib.loc=.libPaths())
 }
 
 .onUnload <- function(libpath) {
-  library.dynam.unload(libpath=libpath)
+  pkgname <- "HaarSeg";
+  library.dynam.unload(chname=pkgname, libpath=libpath)
 }
-
-# .onLoad()/.onUnload() is used when there is *no* NAMESPACE file
-# .First.lib <- function(libname, pkgname) {
-#   library.dynam(pkgname, package=pkgname)
-# }
-# 
-# .Last.lib <- function(libpath) {
-#   library.dynam.unload(libpath=libpath)
-# }
 
 
 
